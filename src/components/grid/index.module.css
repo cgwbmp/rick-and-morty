@@ -1,0 +1,10 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 18px;
+  justify-content: center;
+}
+
+.item {
+  margin: 18px;
+}

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Grid /> DOM structure not changed 1`] = `
+<section
+  className="grid"
+>
+  Content
+</section>
+`;

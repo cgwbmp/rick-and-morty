@@ -1,17 +1,24 @@
 .card {
-  width: 480px;
-  margin: 20px;
-  background: #bbb;
-  color: #000;
+  position: relative;
+  width: 360px;
+  min-height: 200px;
+  background-color: #000;
   box-sizing: border-box;
+  box-shadow: 8px 8px 0 0px #0a2d14;
+  color: #0f2;
 }
 
 .title {
-  padding: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  max-width: 80%;
+  margin: 0;
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.8);
   font-family: monospace;
   font-size: 18px;
-  line-height: 1.25;
-  margin: 0;
+  line-height: 1;
 }
 
 .image {

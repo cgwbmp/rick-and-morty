@@ -11,6 +11,11 @@ exports[`<Pagination /> DOM structure not changed 1`] = `
   >
     Previos page
   </button>
+  <span
+    className="status"
+  >
+    1/2
+  </span>
   <a
     className="link"
     href="/"

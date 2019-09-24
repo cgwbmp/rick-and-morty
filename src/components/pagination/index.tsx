@@ -26,6 +26,9 @@ const Pagination: React.FC<PaginationProps> = (props: PaginationProps) => {
           </button>
         )
       }
+      <span className={style.status}>
+        {`${page}/${pages}`}
+      </span>
       {
         (hasNext) ? (
           <Link href={{ pathname: '/', query: { page: page + 1 } }}>

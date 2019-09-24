@@ -1,29 +1,49 @@
 .pagination {
+  padding: 0 36px 36px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .link,
 .button {
-  width: 50%;
-  border: 0;
-  background: #333;
-  color: #fff;
-  padding: 20px;
-  font-family: monospace;
-  line-height: 1.25;
-  font-size: 18px;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
+  width: 240px;
+  padding: 22px;
+  border: 4px double #0f2;
+  background-color: #0a2d14;
   box-sizing: border-box;
+  font-family: monospace;
+  line-height: 1;
+  font-size: 18px;
   font-weight: bold;
+  color: #0a2d14;
+  text-shadow:
+    1px 1px 0 #0f2,
+    -1px -1px 0 #0f2,
+    1px -1px 0 #0f2,
+    -1px 1px 0 #0f2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
+
+.link:focus,
 .link:hover {
-  background: #000;
+  border-style: solid;
+  box-shadow: 0 0 12px 0 #0f2, inset 0 0 12px 0 #0f2;
+  outline: none;
 }
+
 .button[disabled] {
-  border: 1px solid;
-  background: #fff;
-  color: #333;
-  opacity: 0.25;
+  opacity: 0.2;
   cursor: default;
+}
+
+.status {
+  font-family: monospace;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0f2;
+  line-height: 1;
 }
