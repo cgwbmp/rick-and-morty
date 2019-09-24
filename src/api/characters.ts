@@ -14,8 +14,8 @@ interface Character {
   name: string,
 }
 
-async function getCharacters(): Promise<Array<Character>> {
-  const source: Response = await fetch(`${entrypoint}/api/character`);
+async function getCharacters(page: number = 1): Promise<Array<Character>> {
+  const source: Response = await fetch(`${entrypoint}/api/character?page=${page}`);
   const response: ApiResponse = await source.json();
   return response.results;
 }

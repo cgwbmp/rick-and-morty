@@ -77,8 +77,13 @@ const Home: NextPage<HomeProps> = (props: HomeProps) => {
   );
 };
 
-Home.getInitialProps = async () => {
-  const characters:Array<Character> = await getCharactersApi();
+interface HomeQuery {
+  page?: number,
+}
+
+Home.getInitialProps = async ({ query }) => {
+  const { page }: HomeQuery = query;
+  const characters:Array<Character> = await getCharactersApi(page);
   return { characters };
 };
 
