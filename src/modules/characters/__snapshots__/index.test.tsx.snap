@@ -2,21 +2,34 @@
 
 exports[`<Characters /> DOM structure not changed 1`] = `
 <div
-  className="pagination"
+  className="layout"
 >
-  <button
-    className="button"
-    disabled={true}
-    type="button"
+  <header
+    className="header"
   >
-    Previos page
-  </button>
-  <button
-    className="button"
-    disabled={true}
-    type="button"
+    <h1
+      className="title"
+    >
+      Welcome to The Rick and Morty Wiki!
+    </h1>
+  </header>
+  <div
+    className="pagination"
   >
-    Next page
-  </button>
+    <button
+      className="button"
+      disabled={true}
+      type="button"
+    >
+      Previos page
+    </button>
+    <button
+      className="button"
+      disabled={true}
+      type="button"
+    >
+      Next page
+    </button>
+  </div>
 </div>
 `;
