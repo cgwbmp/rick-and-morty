@@ -1,0 +1,20 @@
+.card {
+  width: 480px;
+  margin: 20px;
+  background: #bbb;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.title {
+  padding: 20px;
+  font-family: monospace;
+  font-size: 18px;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.image {
+  width: 100%;
+  display: block;
+}

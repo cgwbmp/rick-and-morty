@@ -6,6 +6,7 @@ interface ApiResponse {
   results: Array<{
     id: string,
     name: string,
+    image: string,
   }>,
   info: {
     count: number,

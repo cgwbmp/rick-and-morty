@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CharacterCard /> DOM structure not changed 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt=""
+    className="image"
+    src="#"
+  />
+  <h4
+    className="title"
+  >
+    Name
+  </h4>
+</div>
+`;

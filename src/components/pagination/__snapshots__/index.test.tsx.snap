@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination /> DOM structure not changed 1`] = `
+<div
+  className="pagination"
+>
+  <button
+    className="button"
+    disabled={true}
+    type="button"
+  >
+    Previos page
+  </button>
+  <a
+    className="link"
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Next page
+  </a>
+</div>
+`;
