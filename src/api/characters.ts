@@ -3,21 +3,24 @@ import fetch from 'isomorphic-unfetch';
 const entrypoint = 'https://rickandmortyapi.com';
 
 interface ApiResponse {
-  results: Array<Character>,
+  results: Array<{
+    id: string,
+    name: string,
+  }>,
   info: {
     count: number,
+    pages: number,
   },
 }
 
-interface Character {
-  id: string,
-  name: string,
+interface ApiReject {
+  error: string,
 }
 
-async function getCharacters(page: number = 1): Promise<Array<Character>> {
+async function getCharacters(page: number = 1): Promise<ApiResponse | ApiReject> {
   const source: Response = await fetch(`${entrypoint}/api/character?page=${page}`);
   const response: ApiResponse = await source.json();
-  return response.results;
+  return response;
 }
 
 export default getCharacters;
