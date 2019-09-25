@@ -25,6 +25,7 @@ const Characters: React.FC<CharactersProps> = (props: CharactersProps) => {
             <CharacterCard
               name={character.name}
               image={character.image}
+              status={character.status}
             />
           </GridItem>
         ))}

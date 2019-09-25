@@ -6,6 +6,12 @@ interface ApiResponse {
   results: Array<{
     id: string,
     name: string,
+    gender: string,
+    species: string,
+    location: {
+      name: string,
+    },
+    status: string,
     image: string,
   }>,
   info: {

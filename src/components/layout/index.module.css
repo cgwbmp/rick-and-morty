@@ -9,14 +9,14 @@
 .header {
   width: 100%;
   padding: 18px 24px 14px;
-  background-color: #0a2d14;
+  background-color: #020;
   border-bottom: 4px double #0f2;
   color: #ddd;
   box-sizing: border-box;
 }
 
 .title {
-  color: #0a2d14;
+  color: #020;
   margin: 0;
   font-family: monospace;
   font-size: 18px;

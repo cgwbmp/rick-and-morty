@@ -4,8 +4,23 @@
   min-height: 240px;
   background-color: #000;
   box-sizing: border-box;
-  box-shadow: 8px 8px 0 0px #0a2d14;
+  border: 4px double #062;
   color: #0f2;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  z-index: 1;
+  width: 40%;
+  height: 40%;
+  border-top: 4px solid #0f2;
+  border-left: 4px solid #0f2;
+  border-bottom: 4px solid transparent;
+  border-right: 4px solid transparent;
+  pointer-events: none;
 }
 
 .title {
@@ -24,6 +39,34 @@
 .image {
   width: 100%;
   display: block;
+}
+
+.dead {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: default;
+}
+
+.dead:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 48px solid #a00;
+  border-left: 48px solid transparent;
+  pointer-events: none;
+}
+
+.dead:after {
+  content: "☠";
+  position: relative;
+  padding: 2px;
+  font-size: 24px;
+  color: #000;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 @media screen and (min-width: 640px) {
