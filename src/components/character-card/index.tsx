@@ -1,3 +1,4 @@
+/// <reference path="react-lazy-load-image-component.d.ts" />
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import style from './index.module.css';

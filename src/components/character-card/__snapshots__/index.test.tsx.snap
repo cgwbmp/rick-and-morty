@@ -4,10 +4,15 @@ exports[`<CharacterCard /> DOM structure not changed 1`] = `
 <div
   className="card"
 >
-  <img
-    alt=""
+  <span
     className="image"
-    src="#"
+    style={
+      Object {
+        "display": "inline-block",
+        "height": 0,
+        "width": 0,
+      }
+    }
   />
   <h4
     className="title"
