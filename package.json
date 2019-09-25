@@ -47,6 +47,9 @@
       "airbnb",
       "airbnb-typescript",
       "react-app"
-    ]
+    ],
+    "rules": {
+      "jsx-a11y/anchor-is-valid": "off"
+    }
   }
 }

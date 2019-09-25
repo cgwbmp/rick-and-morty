@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { NextPage } from 'next';
 import ErrorPage from 'next/error';
@@ -37,7 +36,7 @@ const Home: NextPage<HomeProps> = (props: HomeProps) => {
 };
 
 Home.getInitialProps = async ({ query }) => {
-  const page = Number(query.page) || 1;
+  const page: number = Number(query.page) || 1;
   const response = await getCharactersApi(page);
   if ('error' in response) {
     return {
