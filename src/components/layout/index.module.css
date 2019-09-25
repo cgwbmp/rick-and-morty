@@ -8,7 +8,7 @@
 
 .header {
   width: 100%;
-  padding: 24px;
+  padding: 18px 24px 14px;
   background-color: #0a2d14;
   border-bottom: 4px double #0f2;
   color: #ddd;
@@ -19,7 +19,7 @@
   color: #0a2d14;
   margin: 0;
   font-family: monospace;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1;
   text-align: center;
   text-shadow:
@@ -27,4 +27,16 @@
     -1px -1px 0 #0f2,
     1px -1px 0 #0f2,
     -1px 1px 0 #0f2;
+}
+
+@media screen and (min-width: 640px) {
+
+  .header {
+    padding: 24px 36px 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
 }

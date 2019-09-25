@@ -1,7 +1,7 @@
 .card {
   position: relative;
-  width: 360px;
-  min-height: 200px;
+  width: 240px;
+  min-height: 240px;
   background-color: #000;
   box-sizing: border-box;
   box-shadow: 8px 8px 0 0px #0a2d14;
@@ -17,11 +17,24 @@
   padding: 4px;
   background: rgba(0, 0, 0, 0.8);
   font-family: monospace;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1;
 }
 
 .image {
   width: 100%;
   display: block;
+}
+
+@media screen and (min-width: 640px) {
+
+  .card {
+    width: 280px;
+    min-height: 280px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
 }

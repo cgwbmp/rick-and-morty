@@ -19,12 +19,9 @@
     "jsx": "preserve",
     "allowSyntheticDefaultImports": true
   },
-  "exclude": [
-    "node_modules"
-  ],
   "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
+    "src",
+    "pages",
+    "next-env.d.ts"
   ]
 }

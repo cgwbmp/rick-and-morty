@@ -1,5 +1,5 @@
 .pagination {
-  padding: 0 36px 36px;
+  padding: 0 24px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,14 +7,14 @@
 
 .link,
 .button {
-  width: 240px;
-  padding: 22px;
+  width: 108px;
+  padding: 14px 0;
   border: 4px double #0f2;
   background-color: #0a2d14;
   box-sizing: border-box;
   font-family: monospace;
   line-height: 1;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: bold;
   color: #0a2d14;
   text-shadow:
@@ -42,8 +42,27 @@
 .status {
   font-family: monospace;
   line-height: 1;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: bold;
   color: #0f2;
   line-height: 1;
+}
+
+@media screen and (min-width: 640px) {
+
+  .pagination {
+    padding: 0 36px 36px;
+  }
+
+  .link,
+  .button {
+    width: 240px;
+    padding: 22px;
+    font-size: 18px;
+  }
+
+  .status {
+    font-size: 18px;
+  }
+
 }

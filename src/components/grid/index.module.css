@@ -1,10 +1,22 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
-  padding: 18px;
+  padding: 12px;
   justify-content: center;
 }
 
 .item {
-  margin: 18px;
+  margin: 12px;
+}
+
+@media screen and (min-width: 640px) {
+
+  .grid {
+    padding: 18px;
+  }
+
+  .item {
+    margin: 18px;
+  }
+
 }
