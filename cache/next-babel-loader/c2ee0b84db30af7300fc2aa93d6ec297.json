@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport style from './index.module.css';\n\nconst GridItem = props => {\n  const {\n    children\n  } = props;\n  return __jsx(\"div\", {\n    className: style.item\n  }, children);\n};\n\nexport default GridItem;","map":null,"metadata":{},"sourceType":"module"}

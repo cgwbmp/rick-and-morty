@@ -1,0 +1,130 @@
+{
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!src/components/preloader/index.module.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!src/components/character-card/index.module.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!src/components/layout/index.module.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!src/components/pagination/index.module.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!src/components/grid/index.module.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "css node_modules/css-loader/index.js??ref--5-1!src/components/preloader/index.module.css 0": 0,
+      "css node_modules/css-loader/index.js??ref--5-1!src/components/layout/index.module.css 0": 1,
+      "css node_modules/css-loader/index.js??ref--5-1!src/components/character-card/index.module.css 0": 2,
+      "css node_modules/css-loader/index.js??ref--5-1!src/components/pagination/index.module.css 0": 3,
+      "css node_modules/css-loader/index.js??ref--5-1!src/components/grid/index.module.css 0": 4
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "styles": 2,
+      "static/runtime/main.js": 3,
+      "static/w-sW2loVNabxJ6SqPdFSE/pages/_app.js": 4,
+      "static/w-sW2loVNabxJ6SqPdFSE/pages/_error.js": 5,
+      "static/w-sW2loVNabxJ6SqPdFSE/pages/index.js": 6,
+      "static/tsv5bKehmzJf72st8RFhC/pages/_app.js": 7,
+      "static/tsv5bKehmzJf72st8RFhC/pages/_error.js": 8,
+      "static/tsv5bKehmzJf72st8RFhC/pages/index.js": 9,
+      "static/Px_93rT06fLuX4A9tc2mZ/pages/_app.js": 4,
+      "static/Px_93rT06fLuX4A9tc2mZ/pages/_error.js": 5,
+      "static/Px_93rT06fLuX4A9tc2mZ/pages/index.js": 6
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  }
+}

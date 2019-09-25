@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport style from './index.module.css';\n\nconst Preloader = () => __jsx(\"div\", {\n  className: style.preloader\n}, \"Loading\");\n\nexport default Preloader;","map":null,"metadata":{},"sourceType":"module"}
