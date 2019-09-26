@@ -4,13 +4,15 @@
   "private": true,
   "description": "The Rick and Morty Wiki",
   "author": "Alena <cgwbmp@gmail.com>",
-  "homepage": "",
+  "homepage": "https://cgwbmp.github.io/rick-and-morty",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "predeploy": "yarn build && next export && touch ./out/.nojekyll",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
@@ -38,6 +40,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "gh-pages": "^2.1.1",
     "jest": "^24.9.0",
     "react-scripts": "^3.1.2",
     "react-test-renderer": "^16.9.0",

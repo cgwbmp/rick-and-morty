@@ -15,7 +15,7 @@ const Pagination: React.FC<PaginationProps> = (props: PaginationProps) => {
     <div className={style.pagination}>
       {
         (hasPrev) ? (
-          <Link href={{ pathname: '/', query: { page: page - 1 } }}>
+          <Link href={{ pathname: '', query: { page: page - 1 } }}>
             <a className={style.link}>
               Previos page
             </a>
@@ -31,7 +31,7 @@ const Pagination: React.FC<PaginationProps> = (props: PaginationProps) => {
       </span>
       {
         (hasNext) ? (
-          <Link href={{ pathname: '/', query: { page: page + 1 } }}>
+          <Link href={{ pathname: '', query: { page: page + 1 } }}>
             <a className={style.link}>
               Next page
             </a>

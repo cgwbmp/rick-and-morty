@@ -4,6 +4,7 @@ module.exports = withCSS({
   cssModules: true,
   cssLoaderOptions: {
     importLoaders: 1,
-    localIdentName: '[local]___[hash:base64:5]',
+    localIdentName: '[local]___[hash:base64:4]',
   },
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/rick-and-morty' : '',
 });
