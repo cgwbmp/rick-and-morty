@@ -4403,7 +4403,7 @@ function initializeBuildWatcher() {
   var timeoutId = null; // Handle events
 
   var evtSource = (0, _eventsource.getEventSourceWrapper)({
-    path: '/next/webpack-hmr'
+    path: '/_next/webpack-hmr'
   });
   evtSource.addMessageListener(function (event) {
     // This is the heartbeat event
@@ -4769,7 +4769,7 @@ function connect(options) {
         colNumber = _ref.colNumber; // Resolve invalid paths coming from react-error-overlay
 
     var resolvedFilename = fileName.replace(/^webpack:\/\//, '');
-    (0, _unfetch["default"])('/next/development/open-stack-frame-in-editor' + ("?fileName=" + window.encodeURIComponent(resolvedFilename)) + ("&lineNumber=" + (lineNumber || 1)) + ("&colNumber=" + (colNumber || 1)));
+    (0, _unfetch["default"])('/_next/development/open-stack-frame-in-editor' + ("?fileName=" + window.encodeURIComponent(resolvedFilename)) + ("&lineNumber=" + (lineNumber || 1)) + ("&colNumber=" + (colNumber || 1)));
   }); // We need to keep track of if there has been a runtime error.
   // Essentially, we cannot guarantee application state was not corrupted by the
   // runtime error. To prevent confusing behavior, we forcibly reload the entire
@@ -5127,7 +5127,7 @@ function rewriteTraceLine(trace, distDir) {
   }
 
   var filename = m[1];
-  var filenameLink = filename.replace(distDir, '/next/development').replace(/\\/g, '/');
+  var filenameLink = filename.replace(distDir, '/_next/development').replace(/\\/g, '/');
   trace = trace.replace(filename, filenameLink);
   return trace;
 }
@@ -6209,7 +6209,7 @@ function setupPing(assetPrefix, pathnameFn, retry) {
   exports.currentPage = currentPage = pathname; // close current EventSource connection
 
   closePing();
-  var url = assetPrefix + "/next/webpack-hmr?page=" + currentPage;
+  var url = assetPrefix + "/_next/webpack-hmr?page=" + currentPage;
   evtSource = (0, _eventsource.getEventSourceWrapper)({
     path: url,
     timeout: 5000,
@@ -6392,7 +6392,7 @@ var _hotDevClient = _interopRequireDefault(__webpack_require__(/*! ./error-overl
 var _default = function _default(_ref) {
   var assetPrefix = _ref.assetPrefix;
   var options = {
-    path: assetPrefix + "/next/webpack-hmr"
+    path: assetPrefix + "/_next/webpack-hmr"
   };
   var devClient = (0, _hotDevClient["default"])(options);
   devClient.subscribeToHmrEvent(function (obj) {
@@ -6679,7 +6679,7 @@ exports.dataManager = dataManager;
 var prefix = assetPrefix || ''; // With dynamic assetPrefix it's no longer possible to set assetPrefix at the build time
 // So, this is how we do it in the client side at runtime
 
-__webpack_require__.p = prefix + "/next/"; //eslint-disable-line
+__webpack_require__.p = prefix + "/_next/"; //eslint-disable-line
 // Initialize next/config with the environment configuration
 
 envConfig.setConfig({
@@ -7344,7 +7344,7 @@ function () {
     value: function getDependencies(route) {
       return this.promisedBuildManifest.then(function (man) {
         return man[route] && man[route].map(function (url) {
-          return "/next/" + url;
+          return "/_next/" + url;
         }) || [];
       });
     }
@@ -7424,7 +7424,7 @@ function () {
               case 0:
                 route = _this.normalizeRoute(route);
                 scriptRoute = route === '/' ? '/index.js' : route + ".js";
-                url = _this.assetPrefix + "/next/static/" + encodeURIComponent(_this.buildId) + "/pages" + scriptRoute;
+                url = _this.assetPrefix + "/_next/static/" + encodeURIComponent(_this.buildId) + "/pages" + scriptRoute;
 
                 _this.loadScript(url, route, true);
 
@@ -7524,7 +7524,7 @@ function () {
 
                 if (false) {}
 
-                url = isDependency ? route : _this2.assetPrefix + "/next/static/" + encodeURIComponent(_this2.buildId) + "/pages" + scriptRoute; // n.b. If preload is not supported, we fall back to `loadPage` which has
+                url = isDependency ? route : _this2.assetPrefix + "/_next/static/" + encodeURIComponent(_this2.buildId) + "/pages" + scriptRoute; // n.b. If preload is not supported, we fall back to `loadPage` which has
                 // its own deduping mechanism.
 
                 if (!document.querySelector("link[rel=\"preload\"][href^=\"" + url + "\"], script[data-next-page=\"" + route + "\"]")) {

@@ -2456,7 +2456,7 @@ function _tryApplyUpdates() {
 }
 
 (0, _eventsource.getEventSourceWrapper)({
-  path: assetPrefix + "/next/webpack-hmr"
+  path: assetPrefix + "/_next/webpack-hmr"
 }).addMessageListener(function (event) {
   if (event.data === "\uD83D\uDC93") {
     return;
@@ -3568,7 +3568,7 @@ function setupPing(assetPrefix, pathnameFn, retry) {
   exports.currentPage = currentPage = pathname; // close current EventSource connection
 
   closePing();
-  var url = assetPrefix + "/next/webpack-hmr?page=" + currentPage;
+  var url = assetPrefix + "/_next/webpack-hmr?page=" + currentPage;
   evtSource = (0, _eventsource.getEventSourceWrapper)({
     path: url,
     timeout: 5000,
