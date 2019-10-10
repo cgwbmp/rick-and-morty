@@ -11721,7 +11721,7 @@ var Menu = function Menu(props) {
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/episodes",
+    href: "episodes",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
@@ -11742,7 +11742,7 @@ var Menu = function Menu(props) {
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/characters",
+    href: "characters",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
