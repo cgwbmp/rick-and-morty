@@ -9,3 +9,9 @@ export type Character = {
   image: string,
   status: string,
 };
+
+export type Episode = {
+  id: string,
+  name: string,
+  episode: string,
+};

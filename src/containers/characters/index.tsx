@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../../components/layout';
+import Menu from '../../components/menu';
 import CharacterCard from '../../components/character-card';
 import Pagination from '../../components/pagination';
 import Grid, { GridItem } from '../../components/grid';
@@ -9,6 +10,7 @@ interface CharactersProps {
   characters?: Array<Character>,
   page?: number,
   pages?: number,
+  currentPath?: string,
 }
 
 const Characters: React.FC<CharactersProps> = (props: CharactersProps) => {
@@ -16,9 +18,11 @@ const Characters: React.FC<CharactersProps> = (props: CharactersProps) => {
     characters = [],
     page = 1,
     pages = 0,
+    currentPath,
   } = props;
   return (
     <Layout>
+      <Menu currentPath={currentPath} />
       <Grid>
         {characters.map((character: Character) => (
           <GridItem key={character.id}>

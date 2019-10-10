@@ -5,6 +5,11 @@
   justify-content: center;
 }
 
+.vertical {
+  flex-direction: column;
+  align-items: center;
+}
+
 .item {
   margin: 12px;
 }

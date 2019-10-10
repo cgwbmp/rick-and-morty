@@ -11,7 +11,7 @@
     "build": "next build",
     "start": "next start",
     "test": "react-scripts test",
-    "predeploy": "yarn build && next export && touch ./out/.nojekyll",
+    "predeploy": "yarn build && next export && touch ./out/.nojekyll && echo 'Build ready'",
     "deploy": "gh-pages -d out"
   },
   "dependencies": {

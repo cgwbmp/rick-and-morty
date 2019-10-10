@@ -1,0 +1,38 @@
+.card {
+  position: relative;
+  width: calc(100vw - 48px);
+  max-width: 504px;
+  padding: 17px;
+  background-color: #000;
+  box-sizing: border-box;
+  border: 1px solid #062;
+  color: #0f2;
+}
+
+.title {
+  margin: 0;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.info {
+  margin: 0 0 4px;
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 1;
+}
+
+@media screen and (min-width: 640px) {
+
+  .card {
+    width: 596px;
+    max-width: none;
+    padding: 24px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+}

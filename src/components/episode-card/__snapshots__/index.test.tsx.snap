@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EpisodeCard /> DOM structure not changed 1`] = `
+<div
+  className="card"
+>
+  <p
+    className="info"
+  >
+    01
+  </p>
+  <h4
+    className="title"
+  >
+    Name
+  </h4>
+</div>
+`;

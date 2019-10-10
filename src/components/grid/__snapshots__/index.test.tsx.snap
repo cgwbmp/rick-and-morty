@@ -2,7 +2,7 @@
 
 exports[`<Grid /> DOM structure not changed 1`] = `
 <section
-  className="grid"
+  className="grid horisontal"
 >
   Content
 </section>
