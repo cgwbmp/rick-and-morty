@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{"3mUk":function(_,e,a){_.exports={preloader:"preloader___34vY",in:"in___3a4t",load:"load___3vmj"}},URGe:function(_,e,a){_.exports={card:"card___2LV9",title:"title___3nGo",image:"image___6g_G",dead:"dead___X4Hn"}},yI17:function(_,e,a){_.exports={card:"card___3aHz",title:"title___1a9O",info:"info___3npS"}}}]);
