@@ -16,14 +16,14 @@ const Menu: React.FC<MenuProps> = (props: MenuProps) => {
     <nav className={style.menu}>
       <ul className={style.list}>
         <li className={[style.item, isActive('/episodes', currentPath)].join(' ')}>
-          <Link href="/episodes">
+          <Link href="episodes">
             <a className={style.link}>
               Episodes
             </a>
           </Link>
         </li>
         <li className={[style.item, isActive('/characters', currentPath)].join(' ')}>
-          <Link href="/characters">
+          <Link href="characters">
             <a className={style.link}>
               Characters
             </a>

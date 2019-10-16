@@ -1,28 +1,24 @@
 import React from 'react';
 import { NextPage } from 'next';
 import Router from 'next/router';
-import Head from 'next/head';
+import Characters from './characters';
 
 const Home: NextPage = () => (
-  <>
-    <Head>
-      <title>
-        Characters - The Rick and Morty Wiki
-      </title>
-    </Head>
-  </>
+  <Characters />
 );
 
 Home.getInitialProps = async ({ res }) => {
   if (res) {
-    res.writeHead(302, {
-      Location: '/characters',
-    });
-    res.end();
+    if ('writeHead' in res) {
+      res.writeHead(302, {
+        Location: '/characters',
+      });
+      res.end();
+    }
   } else {
     Router.push('/characters');
   }
   return {};
 };
 
-export default Home;
+export default Characters;

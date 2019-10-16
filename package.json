@@ -11,8 +11,8 @@
     "build": "next build",
     "start": "next start",
     "test": "react-scripts test",
-    "predeploy": "yarn build && next export && touch ./out/.nojekyll && echo 'Build ready'",
-    "deploy": "gh-pages -d out"
+    "predeploy": "yarn build && next export && touch ./out/.nojekyll",
+    "deploy": "gh-pages -d out -t true"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
